@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  game: MyString
+  title: MyString
+  description: MyString
+  logo: MyString
+  download: MyString
+  content: MyText
+
+two:
+  game: MyString
+  title: MyString
+  description: MyString
+  logo: MyString
+  download: MyString
+  content: MyText

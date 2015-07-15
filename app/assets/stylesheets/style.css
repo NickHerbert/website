@@ -1,0 +1,334 @@
+
+@font-face {
+    font-family: GeosansLight;
+    src: url(font/GeosansLight.ttf);
+}
+@font-face {
+    font-family: CaviarDreams;
+    src: url(font/CaviarDreams.ttf);
+}
+@font-face {
+    font-family: Kenzo;
+    src: url(font/KensoRegular.otf);
+}
+
+article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-height: 1em; }
+
+.storyfirst { height: 900px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; border-top: 1px solid rgba(255,255,255,0.3); border-bottom: 1px solid rgba(0,0,0,0.4); box-shadow: 0 0 50px rgba(0,0,0,0.8);}
+.storysecond { height: 100px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; border-top: 1px solid rgba(255,255,255,0.3); border-bottom: 1px solid rgba(0,0,0,0.4); box-shadow: 0 0 50px rgba(0,0,0,0.8);}
+.storythird { height: 700px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; border-top: 1px solid rgba(255,255,255,0.3); border-bottom: 1px solid rgba(0,0,0,0.4); box-shadow: 0 0 50px rgba(0,0,0,0.8);}
+.storyfourth { height: 100px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; border-bottom: 1px solid rgba(0,0,0,0.4); box-shadow: inset 0px 20px 15px #000000;-moz-box-shadow: inset 0px 20px 15px #000000;-webkit-box-shadow: inset 0px 20px 15px #000000;}
+
+#first { background: url(../assets/Slide4/Level1.jpg) 50% 0 no-repeat fixed;}
+#second {background: url(../assets/Slide4/bannersprite.png) 50% 0 no-repeat ;  }
+#third { background: url(../assets/Slide4/Hangtown.jpg) 50% 0 no-repeat fixed; }
+#fourth { background: url(../assets/Slide4/CarbonFiber_2.jpg) 50% 0 no-repeat fixed; }
+
+/* Introduction */
+#first .downArrow { background: url(../assets/Slide4/DownArrow.png) 50% 600px no-repeat fixed; min-height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
+
+/* Background Only */
+#second{ padding-bottom: 125px;padding-top: 25px;}
+#second article { background: url(../assets/Slide4/bannersprite.png) repeat #333; color: #fff; width: 445px; margin-left: 100px; padding: 10px 20px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); border: 1px solid rgba(150,150,150,0.1); }
+#second .photograph { background: url(../assets/Slide4/bannersprite.png) transparent 40% 200px no-repeat fixed; min-height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
+#second article p { margin-bottom: 25px; }
+#second article a { color: #ff0;}
+
+/* Background Only */
+#third { padding: 50px 0;
+    box-shadow: inset 0px 10px 20px #000000;
+    -moz-box-shadow: inset 0px 10px 20px #000000;;
+    -webkit-box-shadow: inset 0px 10px 20px #000000;}
+#third article {
+    width: 450px;
+    height: 350px;
+    position: absolute;
+    text-align: left;
+    bottom:50px;
+    left:120px;
+    padding: 50px;
+    font-size:50px;
+    line-height: 100%;
+    background-color: #3a3a3a;
+    color: rgba(130, 146, 174, 0.40);
+    box-shadow: 5px 10px 10px #000000;
+    -moz-box-shadow: 5px 10px 10px #000000;
+    -webkit-box-shadow: 5px 10px 10px #000000;
+}
+#third .photograph { background: url(../assets/Slide4/bannersprite.png) transparent 40% 200px no-repeat fixed; min-height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
+#third article p { margin-bottom: 25px; }
+#third article a { color: #ff0;}
+
+#fourth {
+    display:inline-block;
+    text-align: center;
+    padding-top:40px;
+    left:0px;
+    font-size:14px;
+    color:rgba(255,255,255,0.5);
+}
+#fourth li{
+    display: inline;
+}
+#topMenu {
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 1;
+
+}
+
+
+.bar-nav
+{
+    font-family: GeosansLight;
+    background-color: #333;
+    height: 60px;
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    font-size: 2.1em;
+    text-align:center;
+    box-shadow:  5px 5px 15px #000000;
+    -moz-box-shadow: 5px 5px 15px #000000;
+    -webkit-box-shadow: 5px 5px 15px #000000;
+}
+.bar-nav li{
+    color: #607890;
+    display:inline;
+}
+.bar-nav a{
+    color: #607890;
+    display:inline-block;
+    padding:10px;
+}
+.bar-nav li a:hover {
+    color: #ff6f42;
+    text-decoration: none;
+    background-color: #222222;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.blog-posts {
+    background-color: #333;
+    color: #fff;
+    width: 300px;
+    margin-left: 100px;
+    margin-top: 100px;
+    padding: 10px 20px;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+    line-height: 1.5em;
+    box-shadow: 5px 5px 15px #000000;
+    -webkit-box-shadow: 5px 5px 15px #000000;
+    border: 1px solid rgba(150,150,150,0.1);
+}
+
+.link1{
+    position: absolute;
+    top: 150px;
+    left:28%;
+    width:0px;
+    margin-left:-267px;
+}
+.link2{position: absolute;
+    top: 375px;
+    left:42%;
+    width:0px;
+    margin-left:-327px;
+}
+
+.main-text p,
+.main-text a {
+    position: absolute;
+    text-align: center;
+    line-height: 100%;
+    top: 150px;
+    left:50%;
+    width:22px;
+    background-color: rgba(192, 132, 41, 0.5);
+    margin-left:-172px;
+    font-size:100px;
+    font-weight:bold;
+    z-index:1;
+    color: #ccc;
+}
+.main-text article a { text-decoration: underline; }
+.main-text article a:hover { color: #fff; }
+.main-text em{
+    font-family: CaviarDreams;
+    position: absolute;
+    text-align: center;
+    top: 400px;
+    left:50%;
+    margin-left:-100px;
+    font-weight:bold;
+    z-index:1;
+    color: #ccc;
+    font-size:25px;
+}
+
+.link3{position: absolute;
+    top: 150px;
+    right:28%;
+    width:0px;
+    margin-right:5px;
+}
+.link4{position: absolute;
+    top: 375px;
+    right:37%;
+    width:0px;
+    margin-right:-20px;
+}
+.page-content{
+    margin-top: 75px;
+    background-color: #eee;
+}
+
+#game-titles {
+    list-style-type: none;
+    text-align: center;
+
+}
+#game-titles li{
+
+    padding: 3px;
+    margin: 0;
+    display:inline-block;
+}
+#game-titles li img.none{
+    padding-bottom: 5px;
+}
+#game-titles li img.selected{
+    border:5px solid #3368ff;
+    border-radius: 5px;
+
+}
+
+#game-titles li a:hover{
+    background-color: transparent;
+    text-decoration: none;
+}
+#game-display-window{
+    height:600px;
+    background-color: #333;
+}
+#main-item-window .game-content-header{
+    margin-top: 100px;
+    margin-bottom:15px;
+    float:right;
+}
+#main-item-window .game-content-header h1{
+    font-size: 5em;
+    color: #eee;
+    text-shadow: 0px 1px 3px #222;
+}
+#main-item-window .game-content-body{
+    font-family: GeosansLight;
+    padding:20px;
+    color:#ddd;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius:20px;
+    background: rgba(51, 51, 51, 0.7);
+}
+#main-item-window .game-content-body p img{
+    padding: 10px;
+}
+
+
+.preview-game{
+    background-color: #333;
+    height:600px;
+}
+.preview-game:hover{
+    background-color: #666666;
+}
+.preview-game-text{
+    position:relative;
+    color:#eee;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -o-transform: rotate(90deg);
+    font-family: GeosansLight;
+    line-height:100%;
+    font-size:4em;
+    width:700px;
+    text-align: center;
+    top:100px;
+    margin-left: -200px;
+    left:-50px;
+    font-weight:normal;
+    text-shadow: 0px 0px 1px #333;
+}
+.choose-text{
+    text-align: center;
+    line-height:100%;
+    margin-top: 100px;
+    font-size: 4em;
+    color: #555;
+    text-shadow: 0px 1px 3px #222;
+}
+.navArrowLeft{
+    float:left;
+    position: relative;
+    margin-top:250px;
+    left:-20px;
+}
+.navArrowRight{
+    float:left;
+    position: relative;
+    margin-top: 250px;
+    left:100px;
+
+}
+
+.hoverHelpText{
+    color: rgba(20, 20, 20, 0.2);
+    font-family: GeosansLight;
+    font-size:4em;
+    line-height:100%;
+    position:relative;
+}
+.HHT1{
+    margin-left:-100px;
+    top: 10px;
+}
+.HHT2{
+    margin-left:-100px;
+    top: 10px;
+}
+.HHT3{
+    margin-left:200px;
+    top: -12px;
+}
+.HHT4{
+    margin-left:200px;
+    top: -12px;
+}
+.scrollHT{
+    color: rgba(200, 200, 200, 0.1);
+    font-family: GeosansLight;
+    font-size:4em;
+    line-height:100%;
+    position:relative;
+    text-align: center;
+    margin-top: 590px;
+
+}
+
+.artworkBackground{
+    padding: 150px;
+    margin-top:-10px;
+    background-color: #222;
+}
+.artworkThumbs{
+    text-align: center;
+}
+.artworkThumbs img{
+    margin:0;
+    padding:0;
+}

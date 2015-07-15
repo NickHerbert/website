@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Type:</b>
+  <%= @artwork.a_type %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @artwork.description %>
+</p>
+
+<p>
+  <%= image_tag @artwork.image_url.to_s %>
+</p>
+
+<p>
+  <b>Logo:</b>
+  <%= @artwork.thumbnail %>
+</p>
+
+
+<%= link_to 'Edit', edit_artwork_path(@artwork) %> |
+<%= link_to 'Back', admin_path %>

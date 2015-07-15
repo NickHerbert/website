@@ -1,0 +1,55 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Nick Herbert - Techincal Artist</title>
+  <meta name="description" content="A website that contains information about Nicholas Herbert">
+  <meta name="author" content="Nicholas Herbert">
+  <!-- CSS Code -->
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= stylesheet_link_tag "bootstrap" %>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/refineslide.css" />
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/south-street/jquery-ui.css" id="theme">
+  <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+  <!-- JS Code -->
+  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "bootstrap" %>
+  <%= csrf_meta_tags %>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="assets/script.js"></script>
+
+
+</head>
+
+<body>
+<header id="topMenu">
+  <nav>
+    <% if self.controller_name == "landing"%>
+        <ul class="bar-nav" style="display:none;">
+    <%else%>
+        <ul class="bar-nav" >
+    <%end%>
+      <li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "Levels", levels_path %></li>
+      <li><%= link_to "Artwork", artworks_path %></li>
+      <li><%= link_to "Projects", projects_path %></li>
+      <li><%= link_to "Contact", contacts_path %></li>
+    </ul>
+  </nav>
+  <div style="float: right;position:relative" class="blog-posts">
+    <ul>
+      <li>Blog posts 1</li>
+      <li>Blog posts 2</li>
+      <li>Blog posts 3</li>
+    </ul>
+  </div>
+</header>
+
+<%= yield %>
+
+<script src="http://jquery-ui.googlecode.com/svn/tags/latest/ui/jquery.effects.core.js"></script>
+<script src="http://jquery-ui.googlecode.com/svn/tags/latest/ui/jquery.effects.slide.js"></script>
+</body>
+
+</html>

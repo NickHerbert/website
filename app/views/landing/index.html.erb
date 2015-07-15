@@ -1,0 +1,165 @@
+
+
+<div id="main" role="main">
+
+  <!-- Section #1 / Intro -->
+  <section id="first" class="storyfirst" data-speed="8" data-type="background">
+    <div class="scrollHT"> Scroll </div>
+  <!--Nothing needed here except the down arrow. The rest is coded below -->
+    <div class="downArrow" data-type="sprite" data-offsetY="600" data-Xposition="50%" data-speed="-2"></div>
+
+  </section>
+
+  <!-- Section #2 / Background Only -->
+  <section id="second" class="storysecond" data-speed="1000" data-type="background">
+    <ul class="quick-gallery">
+      <li class="viewport">
+        <%= link_to (levels_path) do %>
+          <span class="dark-background">Levels <em>My worlds</em></span>
+          <img src="/assets/Slide4/LevelsThumb.jpg" />
+       <%end%>
+      </li>
+      <li class="viewport">
+        <%= link_to (artworks_path) do %>
+          <span class="dark-background">Artwork <em>2d/3d visuals</em></span>
+          <img src="/assets/Slide4/Nova.jpg"/>
+        <% end %>
+      </li>
+      <li class="viewport">
+        <%= link_to (projects_path) do %>
+          <span class="dark-background">Projects <em>Making life easier</em></span>
+          <img src="/assets/Slide4/scripts.jpg"/>
+        <% end %>
+      </li>
+    </ul>
+
+  </section>
+
+
+  <!-- Section #2 / Background Only -->
+  <section id="third" class="storythird" data-speed="4" data-type="background">
+    <div style="float:left">
+      <article>
+        Check back often. I will be updating the site frequently.
+      </article>
+    </div>
+  </section>
+
+
+  <section id="fourth" class="storyfourth" data-speed="-3" data-type="background">
+    <nav>
+      <ul>
+        <li>Nick Herbert | </li>
+        <li>Copyright <%=Time.now.year %> | </li>
+        <% if user_signed_in? %>
+
+            <li>
+              <%= link_to 'Sign out', '/signout'%>
+            </li>
+
+        <% else %>
+            <li>
+              <%= link_to 'Sign in', '/signin' %>
+            </li>
+        <% end %>
+      </ul>
+    </nav>
+    <img style="padding-top: 10px;" src="assets/Slide4/ArtemisSmall.png"/>
+
+  </section>
+
+
+
+  <div class="container-fluid" style="background-color:#000">
+    <div class="row-fluid">
+      <div class="span4">
+        <div class="link1">
+          <ul class="ch-list">
+            <li>
+              <div class="ch-item ch-img-1">
+                <div class="hoverHelpText HHT1"> Mouse over </div>
+                <div class="ch-info-wrap">
+                  <div class="ch-info">
+                    <div class="ch-info-front ch-img-1"></div>
+                    <div class="ch-info-back">
+                      <h3>Levels</h3>
+                      <p>My worlds <%= link_to "Click to view", levels_path %></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="link2">
+          <ul class="ch-list">
+            <li>
+              <div class="ch-item ch-img-2">
+                <div class="hoverHelpText HHT2"> Mouse over </div>
+                <div class="ch-info-wrap">
+                  <div class="ch-info">
+                    <div class="ch-info-front ch-img-2"></div>
+                    <div class="ch-info-back">
+                      <h3>Projects</h3>
+                      <p>Making life easier <%= link_to "Click to view", projects_path %></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="span4">
+        <div class="main-text">
+          <p>Nick Herbert</p>
+          <em>Technical artist</em>
+
+        </div>
+      </div>
+      <div class="span4">
+        <div class="link3">
+          <ul class="ch-list">
+            <li>
+              <div class="ch-item ch-img-3">
+                <div class="hoverHelpText HHT3"> Mouse over </div>
+                <div class="ch-info-wrap">
+                  <div class="ch-info">
+                    <div class="ch-info-front ch-img-3"></div>
+                    <div class="ch-info-back">
+                      <h3>Artwork</h3>
+                      <p>2d/3d visuals <%= link_to "Click to view", artworks_path %></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="link4">
+          <ul class="ch-list">
+            <li>
+              <div class="ch-item ch-img-4">
+                <div class="hoverHelpText HHT4"> Mouse over </div>
+                <div class="ch-info-wrap">
+                  <div class="ch-info">
+                    <div class="ch-info-front ch-img-4"></div>
+                    <div class="ch-info-back">
+                      <h3>Contact</h3>
+                      <p>Get in touch <%= link_to "Click to view", contacts_path %></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div> <!-- // End of #main -->
+
+
+

@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Game:</b>
+  <%= @level.game %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @level.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @level.description %>
+</p>
+
+<p>
+  <b>Logo:</b>
+  <%= @level.thumbnail %>
+</p>
+<p>
+  <b>Background:</b>
+  <%= @level.background %>
+</p>
+
+
+<p>
+  <b>Download:</b>
+  <%= @level.download %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @level.content %>
+</p>
+
+
+<%= link_to 'Edit', edit_level_path(@level) %> |
+<%= link_to 'Back', admin_path %>
