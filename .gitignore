@@ -9,7 +9,7 @@
 .idea
 public/assets
 public/uploads
-
+.DS_Store
 # Ignore the default SQLite database.
 /db/*.sqlite3
 
